@@ -25,7 +25,7 @@ public class Hook {
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
-        //cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+"/src/app/Android_WebDriverio.apk");
+        cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+"/src/app/Android_WebDriverio.apk");
         cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"com.wdiodemoapp");
         cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.wdiodemoapp.MainActivity");
         driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
